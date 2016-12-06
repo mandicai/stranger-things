@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{3DAD7908-E829-4F4A-D28D-72A29142B2A8}") = "Stranger Things_Real", "Assembly-CSharp.csproj", "{D19B602D-12DF-4582-8E2D-2B9EF416D24E}"
+EndProject
+Project("{3DAD7908-E829-4F4A-D28D-72A29142B2A8}") = "Stranger Things_Real", "Assembly-CSharp-Editor.csproj", "{9AC410FA-AA0C-A48D-6683-7122047630D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D19B602D-12DF-4582-8E2D-2B9EF416D24E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D19B602D-12DF-4582-8E2D-2B9EF416D24E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D19B602D-12DF-4582-8E2D-2B9EF416D24E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D19B602D-12DF-4582-8E2D-2B9EF416D24E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AC410FA-AA0C-A48D-6683-7122047630D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AC410FA-AA0C-A48D-6683-7122047630D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AC410FA-AA0C-A48D-6683-7122047630D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AC410FA-AA0C-A48D-6683-7122047630D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
