@@ -74,7 +74,9 @@
      <Compile Include="Assets\OVR\Scripts\Util\OVRSceneSampleController.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRScreenFade.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRWaitCursor.cs" />
+     <Compile Include="Assets\Scripts\AnimatorMonster.cs" />
      <Compile Include="Assets\Scripts\LightFlicker.cs" />
+     <Compile Include="Assets\Scripts\LightFlicker2.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />
@@ -244,13 +246,9 @@
      <Compile Include="Assets\VRTK\Scripts\VRTK_TouchpadWalking.cs" />
      <Compile Include="Assets\VRTK\Scripts\VRTK_UIPointer.cs" />
      <None Include="Assets\VRTK\Version.txt" />
-     <None Include="Assets\MeshPainter\Files\keys.txt" />
      <None Include="Assets\SteamVR\Resources\SteamVR_Fade.shader" />
-     <None Include="Assets\MeshPainter\Files\Shaders\Transparent.shader" />
-     <None Include="Assets\MeshPainter\Meshes\Meshes.txt" />
      <None Include="Assets\SteamVR\Resources\SteamVR_ClearAll.shader" />
      <None Include="Assets\OVR\Shaders\OVRColorRampAlpha.shader" />
-     <None Include="Assets\MeshPainter\Documentation\readme.txt" />
      <None Include="Assets\VRTK\Scripts\Shaders\UIOverlay.shader" />
      <None Include="Assets\VRTK\Scripts\Shaders\VRTK_OutlineBasic.shader" />
      <None Include="Assets\VRTK\Scripts\Shaders\AdaptiveQualityDebugVisualization.shader" />
@@ -273,7 +271,7 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="MeshPainter">
- <HintPath>/Users/Mandi/Documents/Motel/AR&VR Narratives/Stranger Things_Real/Assets/Plugins/MeshPainter.dll</HintPath>
+ <HintPath>/Users/Mandi/Desktop/GitHub Projects/stranger_things/Stranger Things_Real/Assets/Plugins/MeshPainter.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
