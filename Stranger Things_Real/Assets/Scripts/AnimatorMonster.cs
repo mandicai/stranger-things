@@ -14,32 +14,52 @@ public class AnimatorMonster : MonoBehaviour {
 
 	void Update () {
 
-		// Detect if the space bar is down
-		// Grab the space bar input
-		// If the space bar is down, transition to the moving animation 
-		// Set the condition boolean to true 
-		// If the space bar is up, set the condition boolean to false
+		// Navigate the Demogorgon
+		bool walkforward = Input.GetKey("up"); // Detects if the up key is pressed 
+		bool walkbackward = Input.GetKey("down"); // Detects if the down key is pressed 
+		bool walkright = Input.GetKey("right"); // Detects if the right key is pressed 
+		bool walkleft = Input.GetKey ("left"); // Detects if the left key is pressed 
 
-		bool keydown = Input.GetKey("space"); // Detects if the spacebar is down
-		bool keyup = Input.GetKeyUp("space"); // Detects if the spacebar is up
-		bool attack = Input.GetKey("return"); // Detects if the enter key is down
-		bool spawn = Input.GetKey("s"); // Detects if the s key is down 
-
-		if (keydown) {
-			animator.SetBool ("WalkForward", true);
+		if (walkforward) {
+			animator.SetBool ("WalkForward", true); // Move forward 
 			monster.transform.Translate (0, 0, 0.06f);
-		} else if (keyup) {
+		} else {
 			animator.SetBool ("WalkForward", false);
 		}
 
+		if (walkbackward) {
+			animator.SetBool ("WalkBackward", true); // Move backward
+			monster.transform.Translate (0, 0, -0.06f);
+		} else {
+			animator.SetBool ("WalkBackward", false);
+		}
+
+		if (walkright) {
+			animator.SetBool ("WalkRight", true); // Move right
+			monster.transform.Translate (0.06f, 0, 0);
+		} else {
+			animator.SetBool ("WalkRight", false);
+		}
+
+		if (walkleft) {
+			animator.SetBool ("WalkLeft", true); // Move left 
+			monster.transform.Translate (-0.06f, 0, 0);
+		} else {
+			animator.SetBool ("WalkLeft", false);
+		}
+
+		// Specific Demogorgon actions
+		bool attack = Input.GetKey("return"); // Detects if the enter key is pressed 
+		bool spawn = Input.GetKey("s"); // Detects if the s key is pressed  
+
 		if (attack) {
-			animator.SetBool ("Attack", true);
+			animator.SetBool ("Attack", true); // Attack
 		} else {
 			animator.SetBool ("Attack", false);
 		}
 
 		if (spawn) {
-			animator.SetBool ("Spawn", true);
+			animator.SetBool ("Spawn", true); // Climb up from the ground
 		} else {
 			animator.SetBool ("Spawn", false);
 		}
