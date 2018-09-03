@@ -1,2 +1,2 @@
-# stranger_things
+# stranger-things
 A Stranger Things themed VR environment.
